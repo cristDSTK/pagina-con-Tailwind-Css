@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #header__info--box i {
+        font-size: 30px;
+      }
+      #btnMenu i {
+        color: white;
+        font-size: 30px;
+      }
+      #header__title {
+        background: transparent;
+        backdrop-filter: blur(8px);
+      }
+      #about {
+        height: 700px;
+      }
+      #contact {
+        height: 700px;
+      }
+      #list {
+        height: 700px;
+      }
+      #help {
+        height: 700px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header
+      id="header"
+      class="bg-[url('./images/Background.jpg')] flex flex-col gap-12 items-center bg-center bg-cover"
+    >
+      <section
+        id="header__nav"
+        class="flex flex-row items-center text-white justify-between p-6 h-24 w-4/6 m-auto"
+      >
+        <span class="text-4xl font-bold cursor-pointer tracking-widest"
+          >Logo</span
+        >
+        <nav class="hidden lg:block">
+          <ul class="flex flex-row">
+            <li
+              class="pl-6 text-xl cursor-pointer hover:text-black font-normal xl:pl-16 tracking-wide transition duration-300"
+            >
+              <a href="#home" class="active: transition duration-500"> Home </a>
+            </li>
+            <li
+              class="pl-6 text-xl cursor-pointer hover:text-black font-normal xl:pl-16 tracking-wide transition duration-300"
+            >
+              <a href="#about" class="active: transition duration-500">
+                About Us
+              </a>
+            </li>
+            <li
+              class="pl-6 text-xl cursor-pointer hover:text-black font-normal xl:pl-16 tracking-wide transition duration-300"
+            >
+              <a href="#contact" class="transition duration-500"> Contact </a>
+            </li>
+            <li
+              class="pl-6 text-xl cursor-pointer hover:text-black font-normal xl:pl-16 tracking-wide transition duration-300"
+            >
+              <a href="#list" class="transition duration-500"> List </a>
+            </li>
+            <li
+              class="pl-6 text-xl cursor-pointer hover:text-black font-normal xl:pl-16 tracking-wide transition duration-300"
+            >
+              <a href="#help" class="transition duration-500"> Help Us </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section
+        id="header__title"
+        class="w-4/6 m-auto p-6 flex rounded-2xl flex-col items-center justify-center gap-6"
+      >
+        <p class="text-gray-700 text-2xl text-center">
+          How do i get to the University?
+        </p>
+        <h1
+          class="text-5xl font-bold text-center uppercase leading-snug tracking-wider xl:text-6xl"
+        >
+          Welcome to School Best Learning Institutions
+        </h1>
+        <button
+          class="bg-black text-white px-20 py-4 tracking-widest cursor-pointer hover:bg-gray-700 mt-10 transition duration-300"
+        >
+          VIEW CAMP
+        </button>
+      </section>
+      <section
+        id="header__info"
+        class="w-5/6 m-auto text-white grid grid-cols-1 p-6 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:w-4/6"
+      >
+        <div
+          id="header__info--box"
+          class="bg-black p-6 rounded-2xl flex flex-row items-center gap-4 cursor-pointer hover:scale-y-110 transition duration-500"
+        >
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span class="flex flex-col gap-4">
+            <h2 class="font-bold tracking-wide text-xl">Programs</h2>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              quaerat quas
+            </p>
+          </span>
+        </div>
+        <div
+          id="header__info--box"
+          class="bg-black p-6 rounded-2xl flex flex-row items-center gap-4 cursor-pointer hover:scale-y-110 transition duration-500"
+        >
+          <i class="fa-solid fa-book"></i>
+          <span class="flex flex-col gap-4">
+            <h2 class="font-bold tracking-wide text-xl">Certificate</h2>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              quaerat quas atque dolorem ipsa
+            </p>
+          </span>
+        </div>
+        <div
+          id="header__info--box"
+          class="bg-black p-6 rounded-2xl flex flex-row items-center gap-4 cursor-pointer hover:scale-y-110 transition duration-500"
+        >
+          <i class="fa-solid fa-folder-tree"></i>
+          <span class="flex flex-col gap-4">
+            <h2 class="font-bold tracking-wide text-xl">Affordability</h2>
+            <p class="text-gray-400 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </span>
+        </div>
+      </section>
+      <button
+        id="btnMenu"
+        class="bg-black w-20 h-20 rounded-full relative -bottom-8 cursor-pointer hover:bg-gray-700 transition duration-300"
+      >
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </header>
+    <main class="flex flex-col items-center gap-8 mt-9">
+      <section id="about" class="w-5/6 bg-white lg:w-4/6">
+        <h2
+          class="p-6 text-2xl font-medium tracking-wide bg-gray-700 text-white rounded-xl"
+        >
+          About Us
+        </h2>
+      </section>
+      <section id="contact" class="w-5/6 bg-white lg:w-4/6">
+        <h2
+          class="p-6 text-2xl font-medium tracking-wide bg-gray-700 text-white rounded-xl"
+        >
+          Contact
+        </h2>
+      </section>
+      <section id="list" class="w-5/6 bg-white lg:w-4/6">
+        <h2
+          class="p-6 text-2xl font-medium tracking-wide bg-gray-700 text-white rounded-xl"
+        >
+          List
+        </h2>
+      </section>
+      <section id="help" class="w-5/6 bg-white lg:w-4/6">
+        <h2
+          class="p-6 text-2xl font-medium tracking-wide bg-gray-700 text-white rounded-xl"
+        >
+          Help Us
+        </h2>
+      </section>
+    </main>
+    <footer class="w-6/6 bg-black h-64 mt-9"></footer>
+    <script
+      src="https://kit.fontawesome.com/a0d58bd4c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
